@@ -27,13 +27,13 @@ def calculate_expression(expression):
     operators = {
         'plus': lambda x, y: x + y,
         'minus': lambda x, y: x - y,
-        'multiply': lambda x, y: x * y,
+        'into': lambda x, y: x * y,
         'divide': lambda x, y: x / y
     }
 
     # Precedence of operators for handling order of operations
     precedence = {
-        'multiply': 2,
+        'into': 2,
         'divide': 2,
         'plus': 1,
         'minus': 1
@@ -69,7 +69,7 @@ def calculate_expression(expression):
 
 # Function to convert user-friendly expression to a valid expression
 def convert_expression(input_string):
-    operators = {'plus': '+', 'minus': '-', 'multiply': '*', 'divide': '/'}
+    operators = {'plus': '+', 'minus': '-', 'into': '*', 'divide': '/'}
     tokens = input_string.split('/')  # Split the input string into tokens
     expression = tokens[0]  # Initialize the expression with the first token
     
