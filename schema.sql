@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS history (
+    id INTEGER PRIMARY KEY,
+    question TEXT NOT NULL,
+    answer INTEGER NOT NULL
+);
